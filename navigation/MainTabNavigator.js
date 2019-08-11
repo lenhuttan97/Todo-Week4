@@ -6,6 +6,7 @@ import TabBarIcon from '../components/TabBarIcon';
 import CompleteScreen from '../screens/CompleteScreen';
 import AddScreen from '../screens/AddScreen';
 import ActiveScreen from '../screens/ActiveScreen';
+import SingleTodoScreen from '../components/SingleTodoScreen';
 
 const config = Platform.select({
   web: { headerMode: 'screen' },
@@ -34,6 +35,7 @@ CompleteStack.path = '';
 const addStack = createStackNavigator(
   {
     Links: AddScreen,
+    SingleTodo: SingleTodoScreen
   },
   config
 );
